@@ -50,10 +50,7 @@
 
 }
 
-
-
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
-
 
 body {
 	font-family: 'robotolight', Arial, serif;
@@ -61,6 +58,7 @@ body {
 
 .corp .titre1 {
 	font-family: 'Lato', cursive;
+	font-weight: 700;
 }
 
 .corp .titre2 {
