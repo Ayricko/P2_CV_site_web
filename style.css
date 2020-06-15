@@ -1,0 +1,166 @@
+@font-face {
+    font-family: 'robotoblack';
+    src: url('police/Roboto-Black-webfont.eot');
+    src: url('police/Roboto-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/Roboto-Black-webfont.woff2') format('woff2'),
+         url('police/Roboto-Black-webfont.woff') format('woff'),
+         url('police/Roboto-Black-webfont.ttf') format('truetype'),
+         url('police/Roboto-Black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotothin';
+    src: url('police/Roboto-Thin-webfont.eot');
+    src: url('police/Roboto-Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/Roboto-Thin-webfont.woff2') format('woff2'),
+         url('police/Roboto-Thin-webfont.woff') format('woff'),
+         url('police/Roboto-Thin-webfont.ttf') format('truetype'),
+         url('police/Roboto-Thin-webfont.svg#robotothin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url('police/Roboto-Light-webfont.eot');
+    src: url('police/Roboto-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/Roboto-Light-webfont.woff2') format('woff2'),
+         url('police/Roboto-Light-webfont.woff') format('woff'),
+         url('police/Roboto-Light-webfont.ttf') format('truetype'),
+         url('police/Roboto-Light-webfont.svg#robotolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('police/Roboto-Medium-webfont.eot');
+    src: url('police/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('police/Roboto-Medium-webfont.woff2') format('woff2'),
+         url('police/Roboto-Medium-webfont.woff') format('woff'),
+         url('police/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('police/Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	font-family: 'robotolight', Arial, serif;
+}
+
+.tête .titre1 {
+	font-family: 'robotoblack', Arial, serif;
+}
+
+.tête .titre2 {
+	font-family: 'robotothin', Arial, serif;
+}
+
+h1 {
+	font-family: 'robotomedium', Arial, serif;
+	font-size: 0.9em;
+}
+
+h2 {
+	font-size: 0.8em;
+}
+
+a{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	color: blue;
+}
+
+/* gestion du flexbox */
+
+body{
+	display: flex;
+	margin: 0;
+}
+
+.sidebar{
+	display: flex;
+	flex-direction: column;
+
+	background-color: #d1d7cb;
+	min-width: 350px;
+	width: 350px;
+	padding: 20px;
+}
+
+
+.corp{
+	width: 100%;
+}
+
+header{
+	background-color: #1976D2;
+	height: 180px;
+	padding-top: 40px;
+}
+
+header .couleur {
+	color: #d1d7cb;
+}
+
+header div{
+	padding-left: 50px;
+}
+
+header .titre1{
+	font-size: 5em;
+}
+
+header .titre2{
+	font-size: 1.5em;
+}
+
+header img {
+	padding-left: 20px;
+}
+
+.info{
+	display: flex;
+	width: 100%;
+}
+
+.experience{
+	background-color: #81D4FA;
+	width: 50%;
+	padding: 10px;
+}
+
+.formations{
+	background-color: #80CBC4;
+	width: 50%;
+	padding: 10px;
+}
+
+footer{ 
+	background-color: #689F38;
+	border: solid 1px black;
+	height: 40px;
+	text-align: center;
+	padding-bottom: 5px;
+
+ }
+
+ .sidebar img{
+ 	width: 180px;
+ 	margin-left: auto;
+ 	margin-right: auto;
+ }
+
+
+
+
