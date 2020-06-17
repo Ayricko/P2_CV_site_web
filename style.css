@@ -46,15 +46,6 @@ a:hover {
 	color: blue;
 }
 
-.info h2{
-	margin-block-start: 0.4em;
-    margin-block-end: 0.4em;
-}
-
-.info ul{
-	margin-block-start: 0.65em;
-	margin-block-end: 0.65em;
-}
 
 /* gestion du flexbox */
 
@@ -71,37 +62,85 @@ body {
 
 .corp{
 	width: 100%;
+}
+
+aside{
 	display: flex;
+	background-color: #d1d7cb;
 	flex-direction: column;
+	width: 250px;
+	min-width: 250px;
+	padding: 35px;
 }
 
 .info{
 	display: flex;
 }
 
-.sidebar{
-	display: flex;
-	flex-direction: column;
-	background-color: #d1d7cb;
-	min-width: 250px;
-	width: 270px;
-	padding: 35px;
+.experience{
+	padding: 10px;
+	min-width: 450px;
+	width: 50%;
 }
 
-.sidebar .photo{
+.formations{
+	padding: 10px;
+	min-width: 450px;
+	width: 50%;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+
+.media2{
+	display: none;
+}
+/* gestion des contenus */
+
+aside .photo{
 	width: 180px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
 }
 
-.sidebar i{
+aside i{
 	padding-right: 10px;
 }
 
-.sidebar .separateur{
+aside .separateur{
 	display: none;
 }
+
+.a_propos{
+	text-align: justify;
+ }
+ 
+.soft_skills {
+	margin-block-end: 1.3em;
+}
+
+.soft_skills p {
+   margin-block-start: 0.2em;
+   margin-block-end: 0.2em;
+}
+
+.soft_skills .soft{
+   margin-block-start: 1em;
+}
+
+.contact p {
+   margin-block-start: 0.2em;
+   margin-block-end: 0.2em;
+}
+
+.contact .nom {
+   margin-block-start: 1em;
+}
+
 
 header .couleur {
 	color: #d1d7cb;
@@ -121,24 +160,35 @@ header .titre2{
 
 header img {
 	padding-left: 20px;
-	width: 100%;
+	width: 96%;
 	height: 5px;
 }
+
 
 .info h1{
 	padding-left: 50px;
 }
 
 .info .separateur{
-	padding-left: 15px;
+	padding-left: 20px;
 	padding-top: 7px;
 	padding-bottom: 10px;
-	width: 100%;
+	width: 96%;
 	height: 5px;
 }
 
 .info i{
 	padding-right: 10px;
+}
+
+.info h2{
+	margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+}
+
+.info ul{
+	margin-block-start: 0.65em;
+	margin-block-end: 0.65em;
 }
 
 .padding{
@@ -162,6 +212,7 @@ header img {
 
 .padding2 .droite{
 	margin-left: 15px;
+	display: inline-grid;
 }
 
 .padding2 .gauche{
@@ -169,53 +220,9 @@ header img {
 	margin-right: 15px;
 }
 
-.experience{
-	padding: 10px;
-	min-width: 450px;
-	width: 50%;
-}
-
-.formations{
-	padding: 10px;
-	min-width: 450px;
-	width: 50%;
-}
-
 .formations .padding {
 	padding-bottom: 50px;
 }
-
-.soft_skills {
-	margin-block-end: 1.3em;
-}
-
-.soft_skills p {
-   margin-block-start: 0.2em;
-   margin-block-end: 0.2em;
-}
-
-.soft_skills .soft{
-   margin-block-start: 1em;
-}
-
-.contact p {
-   margin-block-start: 0.2em;
-   margin-block-end: 0.2em;
-}
-
-.contact .nom {
-   margin-block-start: 1em;
-}
-
-.a_propos{
-   text-align: justify;
-}
-
-footer{
-	text-align: center;
-	padding-bottom: 5px;
- }
-
 
  /* Réactions responsive */
 
@@ -226,35 +233,56 @@ footer{
 		align-items: center;
 	}
 
+	aside{
+		background-color: #FFFFFF;
+		width: 75%;
+		min-width: 450px;
+	}
+
+	header{
+		background-color: #d1d7cb;
+		order: -1;
+		width: 75%;
+		min-width: 500px;
+		margin: auto;
+		text-align: center;
+	}
+
+	.media2{
+		display: unset;
+	}
+
+	.media3{
+		display: none;
+	}
+
 	.info {
 		flex-wrap: wrap;
 		justify-content: center;
+		width: auto;
+		min-width: 450px;
 	}
 
-	.sidebar{
-		background-color: #FFFFFF;
-		width: 450px;
+	.info h1{
+		text-align: center;
+		padding-left: 0;
 	}
-	.sidebar .media1{
+
+	footer{
+		width: auto;
+	}
+
+	aside .media1{
 		display: flex;
 		justify-content: space-between;
 	}
-
-	.sidebar h1{
-		padding-left: 50px;
+	
+	aside .profil{
+		text-align: center;
 	}
 
-
-	.sidebar .separateur{
+	aside .separateur{
 		display: initial;
-		padding-top: 7px;
-		padding-bottom: 10px;
-		width: 100%;
-		height: 5px;
-	}
-
-	.info .separateur{
-		padding-left: 0px;
 		padding-top: 7px;
 		padding-bottom: 10px;
 		width: 100%;
@@ -263,13 +291,7 @@ footer{
 
 	.contact{
 		text-align: right;
-	}
-
-	header{
-		background-color: #d1d7cb;
-		width: auto;
-		text-align: center;
-	}
+	}	
 
 	header .couleur{
 		color: white;
@@ -288,12 +310,51 @@ footer{
 		display: none;
 	}
 
+	.info .separateur{
+		padding-left: 0px;
+		padding-top: 7px;
+		padding-bottom: 10px;
+		width: 100%;
+		height: 5px;
+	}
+
+	.experience{
+		padding: 10px;
+		min-width: 500px;
+		width: 75%;
+	}
+	
+	.formations{
+		padding: 10px;
+		min-width: 500px;
+		width: 75%;
+	}
+
 	.formations .padding {
-		padding-bottom: 20px;
+		padding-bottom: 10px;
 	}
 
 	.formations .padding2 {
 		width: 450px;
+	}
+
+	h1 {
+		font-weight: 300;
+		font-size: 1.2em;
+		margin-block-end: 0px;
+	}
+	
+	h2 {
+		font-weight: 400;
+		font-size: 1.05em;
+	}
+	
+	p{
+		font-size: 0.99em;
+	}
+	
+	ul li {
+		font-size: 1em;
 	}
 
 }
