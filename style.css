@@ -71,12 +71,11 @@ body {
 
 .corp{
 	width: 100%;
-	flex-direction: column;
 	display: flex;
+	flex-direction: column;
 }
 
 .info{
-	height: 100%;
 	display: flex;
 }
 
@@ -89,30 +88,35 @@ body {
 	padding: 35px;
 }
 
-.sidebar img{
+.sidebar .photo{
 	width: 180px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
 }
 
-header .couleur {
-	color: #d1d7cb;
+.sidebar i{
+	padding-right: 10px;
 }
 
-header div{
-	padding-left: 150px;
+.sidebar .separateur{
+	display: none;
+}
+
+header .couleur {
+	color: #d1d7cb;
 }
 
 header .titre1{
 	font-size: 3em;
 	padding-top: 80px;
-	min-width: 450px;
+	padding-left: 150px;
 }
 
 header .titre2{
 	font-size: 1.5em;
 	padding-bottom: 20px;
+	padding-left: 150px;
 }
 
 header img {
@@ -127,7 +131,6 @@ header img {
 
 .info .separateur{
 	padding-left: 15px;
-
 	padding-top: 7px;
 	padding-bottom: 10px;
 	width: 100%;
@@ -146,7 +149,7 @@ header img {
 .padding2 {
 	padding-left: 25px;
 	display: flex;
-	justify-content: space-between;	
+	justify-content: space-around;	
  }
 
 .padding2 li {
@@ -157,15 +160,24 @@ header img {
 	margin-block-start: 0.1em;
 }
 
+.padding2 .droite{
+	margin-left: 15px;
+}
+
+.padding2 .gauche{
+	padding-top: 3px;
+	margin-right: 15px;
+}
+
 .experience{
 	padding: 10px;
-	min-width: 435px;
+	min-width: 450px;
 	width: 50%;
 }
 
 .formations{
 	padding: 10px;
-	min-width: 435px;
+	min-width: 450px;
 	width: 50%;
 }
 
@@ -206,12 +218,88 @@ footer{
 
 
  /* Réactions responsive */
-@media all and (max-width: 1120px){
 
-.info {
-	flex-wrap: wrap;
-	justify-content: center;
+@media all and (max-width: 1024px){
+
+	body{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.info {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.sidebar{
+		background-color: #FFFFFF;
+		width: 450px;
+	}
+	.sidebar .media1{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.sidebar h1{
+		padding-left: 50px;
+	}
+
+
+	.sidebar .separateur{
+		display: initial;
+		padding-top: 7px;
+		padding-bottom: 10px;
+		width: 100%;
+		height: 5px;
+	}
+
+	.info .separateur{
+		padding-left: 0px;
+		padding-top: 7px;
+		padding-bottom: 10px;
+		width: 100%;
+		height: 5px;
+	}
+
+	.contact{
+		text-align: right;
+	}
+
+	header{
+		background-color: #d1d7cb;
+		width: auto;
+		text-align: center;
+	}
+
+	header .couleur{
+		color: white;
+	}
+
+	header .titre1{
+		padding-top: 20px;
+		padding-left: 0px;
+	}
+
+	header .titre2{
+		padding-left: 0px;
+	}
+
+	header img{
+		display: none;
+	}
+
+	.formations .padding {
+		padding-bottom: 20px;
+	}
+
+	.formations .padding2 {
+		width: 450px;
+	}
+
+}
+@media all and (max-width: 812px){
+
+
 }
 
 
-}
