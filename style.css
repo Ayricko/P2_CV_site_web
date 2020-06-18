@@ -170,7 +170,7 @@ header img {
 }
 
 .info .separateur{
-	padding-left: 20px;
+	padding-left: 10px;
 	padding-top: 7px;
 	padding-bottom: 10px;
 	width: 96%;
@@ -242,18 +242,10 @@ header img {
 	header{
 		background-color: #d1d7cb;
 		order: -1;
-		width: 75%;
+		width: 100%;
 		min-width: 500px;
 		margin: auto;
 		text-align: center;
-	}
-
-	.media2{
-		display: unset;
-	}
-
-	.media3{
-		display: none;
 	}
 
 	.info {
@@ -263,13 +255,17 @@ header img {
 		min-width: 450px;
 	}
 
-	.info h1{
-		text-align: center;
-		padding-left: 0;
-	}
-
 	footer{
 		width: auto;
+	}
+
+
+	.media2{
+		display: unset;
+	}
+
+	.media3{
+		display: none;
 	}
 
 	aside .media1{
@@ -310,8 +306,13 @@ header img {
 		display: none;
 	}
 
+	.info h1{
+		text-align: center;
+		padding-left: 0;
+	}
+
 	.info .separateur{
-		padding-left: 0px;
+		padding-left: 5px;
 		padding-top: 7px;
 		padding-bottom: 10px;
 		width: 100%;
@@ -323,7 +324,7 @@ header img {
 		min-width: 500px;
 		width: 75%;
 	}
-	
+
 	.formations{
 		padding: 10px;
 		min-width: 500px;
@@ -350,12 +351,14 @@ header img {
 	}
 	
 	p{
-		font-size: 0.99em;
+		font-size: 1.1em;
 	}
 	
 	ul li {
 		font-size: 1em;
 	}
+
+
 
 }
 @media all and (max-width: 812px){
