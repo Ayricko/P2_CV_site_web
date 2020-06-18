@@ -342,13 +342,13 @@ header img {
 
 	h1 {
 		font-weight: 300;
-		font-size: 1.2em;
+		font-size: 1.4em;
 		margin-block-end: 0px;
 	}
 	
 	h2 {
 		font-weight: 400;
-		font-size: 1.05em;
+		font-size: 1.2em;
 	}
 	
 	p{
@@ -356,7 +356,7 @@ header img {
 	}
 	
 	ul li {
-		font-size: 1em;
+		font-size: 1.2em;
 	}
 
 
