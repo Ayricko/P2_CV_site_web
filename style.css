@@ -1,6 +1,20 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+
+hr {
+	height: 5px;
+	background-color:#d1d7cb;
+	border: none;
+}
+
+.media3 hr{
+	width: 98%;
+}
+
+
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif, arial;
 	font-weight: 300;
 }
 
@@ -9,11 +23,7 @@ i{
 	color: #525350;
 }
 
-.corp .titre1 {
-	font-weight: 300;
-}
-
-.corp .titre2 {
+.corp .div {
 	font-weight: 300;
 }
 
@@ -77,13 +87,7 @@ aside{
 	display: flex;
 }
 
-.experience{
-	padding: 10px;
-	min-width: 450px;
-	width: 50%;
-}
-
-.formations{
+.experience, .formations{
 	padding: 10px;
 	min-width: 450px;
 	width: 50%;
@@ -101,18 +105,11 @@ footer{
 /* gestion des contenus */
 
 aside .photo{
-	width: 180px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10px;
+	margin: 0 auto 10px auto;
 }
 
 aside i{
 	padding-right: 10px;
-}
-
-aside .separateur{
-	display: none;
 }
 
 .a_propos{
@@ -123,18 +120,13 @@ aside .separateur{
 	margin-block-end: 1.3em;
 }
 
-.soft_skills p {
-   margin-block-start: 0.2em;
-   margin-block-end: 0.2em;
+.media1 p{
+	margin-block-start: 0.2em;
+	margin-block-end: 0.2em;
 }
 
 .soft_skills .soft{
    margin-block-start: 1em;
-}
-
-.contact p {
-   margin-block-start: 0.2em;
-   margin-block-end: 0.2em;
 }
 
 .contact .nom {
@@ -169,14 +161,6 @@ header img {
 	padding-left: 50px;
 }
 
-.info .separateur{
-	padding-left: 10px;
-	padding-top: 7px;
-	padding-bottom: 10px;
-	width: 96%;
-	height: 5px;
-}
-
 .info i{
 	padding-right: 10px;
 }
@@ -192,8 +176,7 @@ header img {
 }
 
 .padding{
-	padding-left: 90px;
-	padding-right: 40px;
+	padding: 0 40px 0 90px;
 }
 
 .padding2 {
@@ -212,6 +195,7 @@ header img {
 
 .padding2 .droite{
 	margin-left: 15px;
+	padding-top: 10px;
 	display: inline-grid;
 }
 
@@ -277,13 +261,6 @@ header img {
 		text-align: center;
 	}
 
-	aside .separateur{
-		display: initial;
-		padding-top: 7px;
-		padding-bottom: 10px;
-		width: 100%;
-		height: 5px;
-	}
 
 	.contact{
 		text-align: right;
@@ -294,8 +271,7 @@ header img {
 	}
 
 	header .titre1{
-		padding-top: 20px;
-		padding-left: 0px;
+		padding: 20px 0 0 0;
 	}
 
 	header .titre2{
@@ -311,21 +287,7 @@ header img {
 		padding-left: 0;
 	}
 
-	.info .separateur{
-		padding-left: 5px;
-		padding-top: 7px;
-		padding-bottom: 10px;
-		width: 100%;
-		height: 5px;
-	}
-
-	.experience{
-		padding: 10px;
-		min-width: 500px;
-		width: 75%;
-	}
-
-	.formations{
+	.experience, .formations{
 		padding: 10px;
 		min-width: 500px;
 		width: 75%;
@@ -413,13 +375,6 @@ header img {
 		text-align: center;
 	}
 
-	aside .separateur{
-		display: initial;
-		padding-top: 7px;
-		padding-bottom: 10px;
-		width: 100%;
-		height: 5px;
-	}
 
 	.contact{
 		text-align: right;
@@ -430,8 +385,7 @@ header img {
 	}
 
 	header .titre1{
-		padding-top: 20px;
-		padding-left: 0px;
+		padding: 20px 0 0 0;
 	}
 
 	header .titre2{
@@ -447,26 +401,12 @@ header img {
 		padding-left: 0;
 	}
 
-	.info .separateur{
-		padding-left: 5px;
-		padding-top: 7px;
-		padding-bottom: 10px;
-		width: 100%;
-		height: 5px;
-	}
-
-	.experience{
+	.experience, .formations{
 		padding: 10px;
 		min-width: 500px;
 		width: 75%;
 	}
-
-	.formations{
-		padding: 10px;
-		min-width: 500px;
-		width: 75%;
-	}
-
+	
 	.formations .padding {
 		padding-bottom: 10px;
 	}
@@ -494,9 +434,6 @@ header img {
 	ul li {
 		font-size: 1.2em;
 	}
-
-
-
 }
 
 
