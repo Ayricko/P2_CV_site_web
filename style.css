@@ -2,17 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
 
 
-hr {
-	height: 5px;
-	background-color:#d1d7cb;
-	border: none;
-}
-
-.media3 hr{
-	width: 98%;
-}
-
-
 body {
 	font-family: 'Lato', sans-serif, arial;
 	font-weight: 300;
@@ -27,13 +16,13 @@ i{
 	font-weight: 300;
 }
 
-h1 {
+h2 {
 	font-weight: 300;
 	font-size: 1em;
-	margin-block-end: 0px;
+	margin-bottom: 0;
 }
 
-h2 {
+h3 {
 	font-weight: 400;
 	font-size: 0.85em;
 }
@@ -56,6 +45,17 @@ a:hover {
 	color: blue;
 }
 
+hr {
+	height: 5px;
+	background-color:#d1d7cb;
+	border: none;
+	margin-bottom: 1.2em;
+
+}
+
+.media3 hr{
+	width: 98%;
+}
 
 /* gestion du flexbox */
 
@@ -117,20 +117,20 @@ aside i{
  }
  
 .soft_skills {
-	margin-block-end: 1.3em;
+	margin-bottom: 1.3em;
 }
 
 .media1 p{
-	margin-block-start: 0.2em;
-	margin-block-end: 0.2em;
+	margin-top: 0.2em;
+	margin-bottom: 0.2em;
 }
 
 .soft_skills .soft{
-   margin-block-start: 1em;
+   margin-top: 1em;
 }
 
 .contact .nom {
-   margin-block-start: 1em;
+   margin-top: 1em;
 }
 
 
@@ -157,7 +157,7 @@ header img {
 }
 
 
-.info h1{
+.info h2{
 	padding-left: 50px;
 }
 
@@ -165,14 +165,14 @@ header img {
 	padding-right: 10px;
 }
 
-.info h2{
-	margin-block-start: 0.4em;
-    margin-block-end: 0.4em;
+.info h3{
+	margin-top: 0.4em;
+    margin-bottom: 0.4em;
 }
 
 .info ul{
-	margin-block-start: 0.65em;
-	margin-block-end: 0.65em;
+	margin-top: 0.65em;
+	margin-bottom: 0.65em;
 }
 
 .padding{
@@ -190,7 +190,7 @@ header img {
 }
 
 .padding2 ul {
-	margin-block-start: 0.1em;
+	margin-top: 0.1em;
 }
 
 .padding2 .droite{
@@ -282,7 +282,7 @@ header img {
 		display: none;
 	}
 
-	.info h1{
+	.info h2{
 		text-align: center;
 		padding-left: 0;
 	}
@@ -302,13 +302,13 @@ header img {
 		padding-left: 72px;
 	}
 
-	h1 {
+	h2 {
 		font-weight: 300;
 		font-size: 1.4em;
-		margin-block-end: 0px;
+		margin-bottom: 0px;
 	}
 	
-	h2 {
+	h3 {
 		font-weight: 400;
 		font-size: 1.2em;
 	}
@@ -396,7 +396,7 @@ header img {
 		display: none;
 	}
 
-	.info h1{
+	.info h2{
 		text-align: center;
 		padding-left: 0;
 	}
@@ -416,13 +416,13 @@ header img {
 		padding-left: 72px;
 	}
 
-	h1 {
+	h2 {
 		font-weight: 300;
 		font-size: 1.4em;
-		margin-block-end: 0px;
+		margin-bottom: 0px;
 	}
 	
-	h2 {
+	h3 {
 		font-weight: 400;
 		font-size: 1.2em;
 	}
